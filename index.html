@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=0">
+    <title>NumbersJS</title>
+    <link rel="manifest" href="manifest.json">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="NumberJS">
+    <meta name="apple-mobile-web-app-title" content="NumberJS">
+    <meta name="theme-color" content="#212121">
+    <meta name="msapplication-navbutton-color" content="#212121">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="msapplication-starturl" content="/index.html">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/icon_192_192.png">
+    <link rel="apple-touch-icon" type="image/png" sizes="192x192" href="img/icon_192_192.png">
+    <link rel = "stylesheet" href = "css/styles.min.css">
+</head>
+<body>
+    <a href="https://github.com/Jorger" id = "ribbon" target="_blank"><img style="position: absolute; top: 0; right: 0; border: 0; z-index: 40;" src="img/ribbon.png" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png"></a>
+    <canvas id = "canvas" width = "290" height = "480"></canvas>
+    <div id = "header">
+        <div id="progress"></div>
+        <div id = "divScore">0</div>
+    </div>
+    <script src = "js/build.min.js" charset="utf-8"></script>
+    <script>
+    if('serviceWorker' in navigator)
+    {
+        navigator.serviceWorker.register('/numbers/sw.js', { scope: '/numbers/' })
+        .then(function(registration)
+        {
+            console.log("Service Worker Registered");
+        });
+        navigator.serviceWorker.ready.then(function(registration)
+        {
+            console.log("Service Worker Ready");
+        });
+    }
+    </script>
+</body>
+</html>
