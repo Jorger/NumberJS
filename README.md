@@ -20,11 +20,11 @@ Es posible ver un listado de las nuevas funcionalidades que nos trae ES6, en el 
 
 ![NUMBERJS](https://db.tt/fVuSNFO9)
 
-Es posible acceder al juego a través de la dirección:
+Es posible acceder al juego a través de la dirección: https://jorger.github.io/NumberJS/
 
 Para dispositivos móviles es posible escanear el siguiente código QR.
 
-![QR](https://dl.dropboxusercontent.com/u/181689/imgshoot/qr.png)
+![QR](https://db.tt/2II51Rx7)
 
 En dispositivos móviles basados en Android con navegador Google Chrome, es posible agregar la aplicación a la [pantalla principal], es este caso se hará uso de [manifest.json] para controlar la orientación del dispositivo.
 
