@@ -1,8 +1,8 @@
-importScripts('/numbers/cache-polyfill.js');
+importScripts('/NumberJS/cache-polyfill.js');
 
 self.addEventListener('install', function(e) {
   e.waitUntil(
-    caches.open('numbers').then(function(cache) {
+    caches.open('NumberJS').then(function(cache) {
       return cache.addAll([
         '/NumberJS/',
         'index.html',
